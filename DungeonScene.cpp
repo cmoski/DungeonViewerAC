@@ -119,7 +119,7 @@ void DungeonScene::UpdateCamera()
             if (m_SortedCells[i]->point_in_cell(localpoint))
             {
                 m_CurrentCell = m_SortedCells[i]->m_Position.m_LandCell;
-					 sprintf(debug_status_string, "CellID: 0x%08X", m_CurrentCell);
+					 sprintf(debug_status_string, "CellID: 0x%08X %.3f %.3f %.3f", m_CurrentCell, localpoint.x, localpoint.y, localpoint.z);
                 break;
             }
 
