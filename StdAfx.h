@@ -41,7 +41,7 @@
 #define DEBUGOUTFRAME    OutputDebugFrame
 #define DEBUGOUTMATRIX    OutputDebugMatrix
 
-#define UNFINISHED(comment) __asm int 3;
+#define UNFINISHED(comment) DEBUGOUT(comment);DEBUGOUT("\r\n");
 
 #if _DEBUG
 #define UNFINISHED_WARNING(comment) DEBUGOUT(comment);DEBUGOUT("\r\n");

@@ -1636,11 +1636,13 @@ BOOL ImgTex::InitIndex8(long Width, long Height, long Type)
 BOOL ImgTex::InitCSI(long Width, long Height, long Type)
 {
     UNFINISHED("ImgTex::InitCSI");
+	return FALSE;
 }
 
 BOOL ImgTex::InitAlpha(long Width, long Height, long Type)
 {
     UNFINISHED("ImgTex::InitAlpha");
+	return FALSE;
 }
 
 BOOL ImgTex::Init(long Width, long Height, long Type, BOOL InCache)
