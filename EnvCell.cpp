@@ -274,7 +274,7 @@ void CEnvCell::init_static_objects()
             {
                 if (m_StaticObjIDs[i])
                 {
-                    DEBUGOUT("Making static object 0x%08X\r\n", m_StaticObjIDs[i]);
+                    DEBUGOUT("Making static object 0x%08X in 0x%08X\r\n", m_StaticObjIDs[i], m_Key);
                     m_StaticObjs[i] = CPhysicsObj::makeObject(m_StaticObjIDs[i], 0, FALSE);
                 }
                 else

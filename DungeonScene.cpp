@@ -191,6 +191,7 @@ BOOL DungeonScene::Init(DWORD LandBlock)
 
         if (m_EnvCells[i])
         {
+			/*
             if (!m_EnvCells[i]->m_CellStruct || !m_EnvCells[i]->m_CellStruct->m_2C)
             {
                 CEnvCell::Release(m_EnvCells[i]);
@@ -199,6 +200,7 @@ BOOL DungeonScene::Init(DWORD LandBlock)
                 DEBUGOUT("Missing structure for cell %08X!\r\n", ID);
             }
             else
+			*/
                 m_EnvCells[i]->init_static_objects();
         }
         else
